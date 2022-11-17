@@ -12,8 +12,8 @@ public class Main {
 
         // Задание 2
         System.out.println("Задание 2");
-        int OS = 1;
-        int deviceYear = 2014;
+        int OS = 0;
+        int deviceYear = 2019;
         if (OS == 0) {
             if (deviceYear < 2015) {
                 System.out.println("Установите облегченную версию приложения для IOS по ссылке");
@@ -25,11 +25,30 @@ public class Main {
         if (OS == 1) {
             if (deviceYear < 2015) {
                 System.out.println("Установите облегченную версию приложения для Android по ссылке");
-            }
-            else {
+            } else {
                 System.out.println("Установите версию приложения для Android по ссылке");
             }
 
+        }
+
+        // Задание 3
+        System.out.println("Задание 3");
+        int a = 16;
+        int b = 29;
+        int c = 19;
+        if (a > b) {
+            if (a > c) {
+                System.out.println("Наибольшим числом является " + a);
+            }
+        }
+        if (b > a) {
+            if (b > c) {
+                System.out.println("Наибольшим числом является " + b);
+            }
+        } if (c>a) {
+if (c>b) {
+    System.out.println("Наибольшим числом является " + c);
+}
         }
     }
 }
