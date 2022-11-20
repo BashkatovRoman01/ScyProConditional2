@@ -45,16 +45,17 @@ public class Main {
             if (b > c) {
                 System.out.println("Наибольшим числом является " + b);
             }
-        } if (c>a) {
-if (c>b) {
-    System.out.println("Наибольшим числом является " + c);
-}
+        }
+        if (c > a) {
+            if (c > b) {
+                System.out.println("Наибольшим числом является " + c);
+            }
         }
 
         // Задание 4
         System.out.println("Задание 4");
         int year = 2020;
-        if (year % 4 == 0 && year % 100 ==0) {
+        if (year % 4 == 0 && year % 100 == 0) {
             System.out.println("Год " + year + " является високосным.");
         } else {
             System.out.println("Год " + year + " не является високосным.");
@@ -67,15 +68,44 @@ if (c>b) {
         if (deliveryDistance <= 20) {
             System.out.println(" Для доставки потребуется дней: " + deliveryTime);
         }
-        if (deliveryDistance >20 && deliveryDistance <= 60) {
+        if (deliveryDistance > 20 && deliveryDistance <= 60) {
             System.out.println(" Для доставки потребуется дней: " + (deliveryTime + 1));
         }
-        if (deliveryDistance >60 && deliveryDistance < 100) {
+        if (deliveryDistance > 60 && deliveryDistance < 100) {
             System.out.println(" Для доставки потребуется дней: " + (deliveryTime + 2));
         }
 
+        // Задание 6
+        System.out.println("Задание 6");
+        int monthNumber = 15;
+        switch (monthNumber) {
+            case 12:
+            case 1:
+            case 2:
+                System.out.println("Зима");
+                break;
 
+            case 3:
+            case 4:
+            case 5:
+                System.out.println("Весна");
+                break;
 
+            case 6:
+            case 7:
+            case 8:
+                System.out.println("Лето");
+                break;
+
+            case 9:
+            case 10:
+            case 11:
+                System.out.println("Осень");
+                break;
+            default:
+                System.out.println("Нет такого периода: " + monthNumber);
+
+        }
     }
 }
 
