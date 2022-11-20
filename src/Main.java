@@ -53,8 +53,8 @@ if (c>b) {
 
         // Задание 4
         System.out.println("Задание 4");
-        int year = 2021;
-        if (year % 4 ==0 && year % 400 ==0 || year % 100 ==0) {
+        int year = 2020;
+        if (year % 4 == 0 && year % 100 ==0) {
             System.out.println("Год " + year + " является високосным.");
         } else {
             System.out.println("Год " + year + " не является високосным.");
@@ -62,6 +62,18 @@ if (c>b) {
 
         // Задание 5
         System.out.println("Задание 5");
+        int deliveryDistance = 95;
+        int deliveryTime = 1;
+        if (deliveryDistance <= 20) {
+            System.out.println(" Для доставки потребуется дней: " + deliveryTime);
+        }
+        if (deliveryDistance >20 && deliveryDistance <= 60) {
+            System.out.println(" Для доставки потребуется дней: " + (deliveryTime + 1));
+        }
+        if (deliveryDistance >60 && deliveryDistance < 100) {
+            System.out.println(" Для доставки потребуется дней: " + (deliveryTime + 2));
+        }
+
 
 
     }
