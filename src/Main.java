@@ -33,9 +33,9 @@ public class Main {
 
         // Задание 3
         System.out.println("Задание 3");
-        int a = 16;
+        int a = 46;
         int b = 29;
-        int c = 19;
+        int c = 79;
         if (a > b) {
             if (a > c) {
                 System.out.println("Наибольшим числом является " + a);
@@ -50,6 +50,18 @@ if (c>b) {
     System.out.println("Наибольшим числом является " + c);
 }
         }
+
+        // Задание 4
+        System.out.println("Задание 4");
+        int year = 2021;
+        if (year % 4 ==0 && year % 400 ==0 || year % 100 ==0) {
+            System.out.println("Год " + year + " является високосным.");
+        } else {
+            System.out.println("Год " + year + " не является високосным.");
+        }
+
+        // Задание 5
+
     }
 }
 
